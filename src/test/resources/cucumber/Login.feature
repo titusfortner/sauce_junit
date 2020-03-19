@@ -1,5 +1,6 @@
-Feature: Login works
-  Scenario: User can register
-    Given a user navigates to the sign up page
-    When a user enters valid information
-    Then the user is successfully registered
+Feature: Login
+  Scenario: User can sign in after registration
+    Given a user is registered
+    And a user navigates to the sign in page
+    When the user provides valid credentials
+    Then the user is logged in
