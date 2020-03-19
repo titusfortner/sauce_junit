@@ -7,7 +7,7 @@ import data.UserData;
 import pages.HomePage;
 import pages.SignUpPage;
 
-public class AuthenticationTest extends BaseUITest {
+public class AuthenticationTest extends BaseTest {
     @Test
     public void creates() {
         SignUpPage signUpPage = new SignUpPage();

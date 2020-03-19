@@ -10,7 +10,7 @@ import data.UserData;
 import pages.*;
 
 
-public class AddressTest extends BaseUITest {
+public class AddressTest extends BaseTest {
     @Before
     public void authenticateUser() {
         AuthenticationAPI authenticationAPI = new AuthenticationAPI();

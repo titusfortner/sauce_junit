@@ -9,7 +9,7 @@ import org.junit.Rule;
 import org.junit.rules.TestName;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-public class BaseUITest implements SessionManager {
+public class BaseTest implements SessionManager {
     public SauceSession session;
 
     @Rule
