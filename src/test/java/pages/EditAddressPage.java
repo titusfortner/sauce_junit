@@ -1,9 +1,9 @@
-package tests.pages;
+package pages;
 
 import com.saucelabs.framework.elements.Element;
 import com.saucelabs.framework.elements.TextField;
 import org.openqa.selenium.By;
-import tests.data.AddressData;
+import data.AddressData;
 
 public class EditAddressPage extends BasePage {
 

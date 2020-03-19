@@ -1,11 +1,11 @@
-package tests.apis;
+package apis;
 
 import com.saucelabs.framework.pages.PageObject;
 import io.restassured.common.mapper.TypeRef;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import lombok.Getter;
-import tests.data.AddressData;
+import data.AddressData;
 
 
 import static io.restassured.RestAssured.given;

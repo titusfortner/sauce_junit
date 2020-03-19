@@ -1,4 +1,4 @@
-package tests.ui;
+package tests;
 
 import com.saucelabs.framework.Browser;
 import com.saucelabs.framework.pages.PageObject;
@@ -8,8 +8,6 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.rules.TestName;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import tests.SauceTestWatcher;
-import tests.SessionManager;
 
 public class BaseUITest implements SessionManager {
     public SauceSession session;

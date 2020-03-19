@@ -1,11 +1,11 @@
-package tests.ui;
+package tests;
 
 import org.junit.Assert;
 import org.junit.Test;
-import tests.apis.AuthenticationAPI;
-import tests.data.UserData;
-import tests.pages.HomePage;
-import tests.pages.SignUpPage;
+import apis.AuthenticationAPI;
+import data.UserData;
+import pages.HomePage;
+import pages.SignUpPage;
 
 public class AuthenticationTest extends BaseUITest {
     @Test

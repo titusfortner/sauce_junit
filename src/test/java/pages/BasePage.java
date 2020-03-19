@@ -1,4 +1,4 @@
-package tests.pages;
+package pages;
 
 import com.saucelabs.framework.pages.PageObject;
 import lombok.Getter;

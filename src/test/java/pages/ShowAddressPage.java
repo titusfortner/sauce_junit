@@ -1,8 +1,8 @@
-package tests.pages;
+package pages;
 
 import com.saucelabs.framework.elements.Element;
 import org.openqa.selenium.By;
-import tests.data.AddressData;
+import data.AddressData;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

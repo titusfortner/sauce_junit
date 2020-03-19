@@ -1,4 +1,4 @@
-package tests.data;
+package data;
 
 import com.saucelabs.framework.data.DataObject;
 import lombok.Getter;

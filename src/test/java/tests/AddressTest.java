@@ -1,13 +1,13 @@
-package tests.ui;
+package tests;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import tests.apis.AddressAPI;
-import tests.apis.AuthenticationAPI;
-import tests.data.AddressData;
-import tests.data.UserData;
-import tests.pages.*;
+import apis.AddressAPI;
+import apis.AuthenticationAPI;
+import data.AddressData;
+import data.UserData;
+import pages.*;
 
 
 public class AddressTest extends BaseUITest {
