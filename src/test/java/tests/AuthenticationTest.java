@@ -5,6 +5,7 @@ import org.junit.Test;
 import test.java.tests.apis.AuthenticationAPI;
 import test.java.tests.data.UserData;
 import test.java.tests.pages.HomePage;
+import test.java.tests.pages.LogInPage;
 import test.java.tests.pages.SignUpPage;
 
 public class AuthenticationTest extends BaseTest {
@@ -28,7 +29,10 @@ public class AuthenticationTest extends BaseTest {
         homePage.visit();
         homePage.addCookie("remember_token", userData.getId());
         homePage.visit();
+        homePage.logOut();
 
+        LogInPage logInPage = new LogInPage();
+        logInPage.logIn(userData);
         Assert.assertTrue(homePage.isLoggedIn());
     }
 
