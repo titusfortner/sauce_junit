@@ -1,4 +1,4 @@
-package tests;
+package tests.ui;
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -10,7 +10,7 @@ import tests.data.UserData;
 import tests.pages.*;
 
 
-public class AddressTest extends BaseTest {
+public class AddressTest extends BaseUITest {
     @Before
     public void authenticateUser() {
         AuthenticationAPI authenticationAPI = new AuthenticationAPI();

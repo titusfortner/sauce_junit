@@ -1,4 +1,4 @@
-package tests;
+package tests.ui;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -7,7 +7,7 @@ import tests.data.UserData;
 import tests.pages.HomePage;
 import tests.pages.SignUpPage;
 
-public class AuthenticationTest extends BaseTest {
+public class AuthenticationTest extends BaseUITest {
     @Test
     public void creates() {
         SignUpPage signUpPage = new SignUpPage();
