@@ -22,7 +22,7 @@ public class AuthenticationTest extends BaseTest {
     @Test
     public void logsIn() {
         AuthenticationAPI authenticationAPI = new AuthenticationAPI();
-        UserData userData = authenticationAPI.createUser();
+        UserData userData = authenticationAPI.createRandomUser();
 
         HomePage homePage = new HomePage();
         homePage.visit();
@@ -35,7 +35,7 @@ public class AuthenticationTest extends BaseTest {
     @Test
     public void logsOut() {
         AuthenticationAPI authenticationAPI = new AuthenticationAPI();
-        UserData userData = authenticationAPI.createUser();
+        UserData userData = authenticationAPI.createRandomUser();
 
         HomePage homePage = new HomePage();
         homePage.visit();

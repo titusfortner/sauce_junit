@@ -9,4 +9,8 @@ import lombok.Setter;
 public class UserData extends DataObject {
     private String email = faker.internet().emailAddress();
     private String password = faker.internet().password();
+
+    public UserData getValidUser() {
+        return this;
+    }
 }

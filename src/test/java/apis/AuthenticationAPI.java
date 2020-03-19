@@ -8,7 +8,7 @@ public class AuthenticationAPI extends BaseAPI {
     @Getter
     private String endpoint = "users";
 
-    public UserData createUser() {
+    public UserData createRandomUser() {
         return createUser(new UserData());
     }
 

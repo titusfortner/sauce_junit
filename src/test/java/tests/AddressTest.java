@@ -14,7 +14,7 @@ public class AddressTest extends BaseTest {
     @Before
     public void authenticateUser() {
         AuthenticationAPI authenticationAPI = new AuthenticationAPI();
-        UserData userData = authenticationAPI.createUser();
+        UserData userData = authenticationAPI.createRandomUser();
 
         HomePage homePage = new HomePage();
         homePage.visit();
