@@ -1,4 +1,4 @@
-package test.java.tests.data;
+package tests.data;
 
 import com.saucelabs.framework.data.DataObject;
 import lombok.Getter;

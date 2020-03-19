@@ -1,8 +1,8 @@
-package test.java.tests.apis;
+package tests.apis;
 
 import io.restassured.response.Response;
 import lombok.Getter;
-import test.java.tests.data.UserData;
+import tests.data.UserData;
 
 public class AuthenticationAPI extends BaseAPI {
     @Getter

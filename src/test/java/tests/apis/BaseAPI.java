@@ -1,4 +1,4 @@
-package test.java.tests.apis;
+package tests.apis;
 
 import com.saucelabs.framework.apis.APIObject;
 import io.restassured.specification.RequestSpecification;

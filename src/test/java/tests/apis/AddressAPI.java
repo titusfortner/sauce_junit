@@ -1,13 +1,12 @@
-package test.java.tests.apis;
+package tests.apis;
 
 import com.saucelabs.framework.pages.PageObject;
 import io.restassured.common.mapper.TypeRef;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import lombok.Getter;
-import test.java.tests.data.AddressData;
+import tests.data.AddressData;
 
-import java.util.List;
 
 import static io.restassured.RestAssured.given;
 
@@ -42,7 +41,7 @@ public class AddressAPI extends BaseAPI {
         return response.as(AddressData.class);
     }
 
-    public List<AddressData> getAddresses() {
+    public Object getAddresses() {
         Response response = list();
         return response.as(new TypeRef<>() {});
     }
