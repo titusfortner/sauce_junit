@@ -1,4 +1,4 @@
-package test.java.tests;
+package tests;
 
 import com.saucelabs.framework.Browser;
 import com.saucelabs.framework.pages.PageObject;

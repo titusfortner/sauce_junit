@@ -1,11 +1,11 @@
-package test.java.tests;
+package tests;
 
 import org.junit.Assert;
 import org.junit.Test;
-import test.java.tests.apis.AuthenticationAPI;
-import test.java.tests.data.UserData;
-import test.java.tests.pages.HomePage;
-import test.java.tests.pages.SignUpPage;
+import tests.apis.AuthenticationAPI;
+import tests.data.UserData;
+import tests.pages.HomePage;
+import tests.pages.SignUpPage;
 
 public class AuthenticationTest extends BaseTest {
     @Test

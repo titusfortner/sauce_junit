@@ -1,10 +1,10 @@
-package test.java.tests.pages;
+package tests.pages;
 
 import com.saucelabs.framework.elements.Element;
 import com.saucelabs.framework.elements.TextField;
 import com.saucelabs.framework.pages.OnPage;
 import org.openqa.selenium.By;
-import test.java.tests.data.AddressData;
+import tests.data.AddressData;
 
 @OnPage(path="/addresses/new")
 public class NewAddressPage extends BasePage {

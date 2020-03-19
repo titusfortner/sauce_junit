@@ -1,4 +1,4 @@
-package test.java.tests.data;
+package tests.data;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.saucelabs.framework.data.DataObject;

@@ -1,13 +1,14 @@
-package test.java.tests;
+package tests;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import test.java.tests.apis.AddressAPI;
-import test.java.tests.apis.AuthenticationAPI;
-import test.java.tests.data.AddressData;
-import test.java.tests.data.UserData;
-import test.java.tests.pages.*;
+import tests.apis.AddressAPI;
+import tests.apis.AuthenticationAPI;
+import tests.data.AddressData;
+import tests.data.UserData;
+import tests.pages.*;
+
 
 public class AddressTest extends BaseTest {
     @Before

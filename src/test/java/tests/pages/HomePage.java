@@ -1,9 +1,9 @@
-package test.java.tests.pages;
+package tests.pages;
 
 import com.saucelabs.framework.elements.Element;
 import com.saucelabs.framework.pages.OnPage;
 import org.openqa.selenium.By;
-import test.java.tests.data.UserData;
+import tests.data.UserData;
 
 @OnPage(path="/")
 public class HomePage extends BasePage {

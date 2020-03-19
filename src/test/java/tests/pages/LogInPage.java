@@ -1,10 +1,10 @@
-package test.java.tests.pages;
+package tests.pages;
 
 import com.saucelabs.framework.elements.Element;
 import com.saucelabs.framework.elements.TextField;
 import com.saucelabs.framework.pages.OnPage;
 import org.openqa.selenium.By;
-import test.java.tests.data.UserData;
+import tests.data.UserData;
 
 @OnPage(path="/sign_in")
 public class LogInPage extends BasePage {
