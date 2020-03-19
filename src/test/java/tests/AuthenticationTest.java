@@ -37,7 +37,7 @@ public class AuthenticationTest extends BaseTest {
     }
 
     @Test
-    public void logsOut() {
+    public void logsOut()
         AuthenticationAPI authenticationAPI = new AuthenticationAPI();
         UserData userData = authenticationAPI.createUser();
 

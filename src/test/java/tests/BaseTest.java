@@ -2,34 +2,22 @@ package test.java.tests;
 
 import com.saucelabs.framework.Browser;
 import com.saucelabs.framework.pages.PageObject;
-import com.saucelabs.saucebindings.SauceOptions;
-import com.saucelabs.saucebindings.SauceSession;
 import org.junit.Before;
 import org.junit.Rule;
-import org.junit.rules.TestName;
-import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.WebDriver;
+import test.java.tests.watchers.BaseTestWatcher;
+import test.java.tests.watchers.TestContext;
 
 public class BaseTest {
-    public SauceSession session;
+    public Browser browser;
 
     @Rule
-    public SauceTestWatcher testWatcher = new SauceTestWatcher();
-
-    @Rule
-    public TestName name = new TestName() {
-        public String getMethodName() {
-            return String.format("%s", super.getMethodName());
-        }
-    };
+    public BaseTestWatcher testWatcher = TestContext.implementation();
 
     @Before
     public void setup() {
-        SauceOptions options = new SauceOptions();
-        options.setName(name.getMethodName());
-        session = new SauceSession(options);
-        testWatcher.setSession(session);
-        RemoteWebDriver driver = session.start();
-        Browser browser = new Browser(driver);
+        WebDriver driver = testWatcher.getDriver();
+        browser = new Browser(driver);
         PageObject.setBrowser(browser);
     }
 }
