@@ -9,11 +9,11 @@ import org.junit.Rule;
 import org.junit.rules.TestName;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-public class BaseTest implements SessionManager {
+public class BaseTest {
     public SauceSession session;
 
     @Rule
-    public SauceTestWatcher testWatcher = new SauceTestWatcher(this);
+    public SauceTestWatcher testWatcher = new SauceTestWatcher();
 
     @Rule
     public TestName name = new TestName() {
@@ -27,13 +27,9 @@ public class BaseTest implements SessionManager {
         SauceOptions options = new SauceOptions();
         options.setName(name.getMethodName());
         session = new SauceSession(options);
+        testWatcher.setSession(session);
         RemoteWebDriver driver = session.start();
         Browser browser = new Browser(driver);
         PageObject.setBrowser(browser);
-    }
-
-    @Override
-    public SauceSession getSession() {
-        return session;
     }
 }
