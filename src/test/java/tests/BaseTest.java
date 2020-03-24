@@ -3,6 +3,7 @@ package tests;
 import com.saucelabs.framework.Browser;
 import com.saucelabs.framework.pages.PageObject;
 import com.saucelabs.saucebindings.SauceOptions;
+import com.saucelabs.saucebindings.SaucePlatform;
 import com.saucelabs.saucebindings.SauceSession;
 import org.junit.Before;
 import org.junit.Rule;

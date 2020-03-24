@@ -1,10 +1,12 @@
 package cucumber;
 
+import apis.AuthenticationAPI;
 import com.saucelabs.framework.Browser;
 import com.saucelabs.framework.pages.PageObject;
 import com.saucelabs.saucebindings.SauceOptions;
 import com.saucelabs.saucebindings.SauceSession;
 import data.UserData;
+import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -25,21 +27,19 @@ public class StepDefinitions {
     private HomePage homePage;
 
     @io.cucumber.java.Before
-    public void setup()
+    public void setup(Scenario scenario)
     {
         SauceOptions options = new SauceOptions();
-        //TODO figure out how to set a test name using Cuke
-        //options.setName();
+        options.setName(scenario.getName());
         session = new SauceSession(options);
         RemoteWebDriver driver = session.start();
         Browser browser = new Browser(driver);
         PageObject.setBrowser(browser);
     }
     @io.cucumber.java.After
-    public void after()
+    public void after(Scenario scenario)
     {
-        //TODO no clue how to get the test status from Cuke
-        session.stop(true);
+        session.stop(!scenario.isFailed());
     }
 
     @Given("a user navigates to the sign up page")
@@ -59,9 +59,8 @@ public class StepDefinitions {
     }
     @Given("a user is registered")
     public void a_user_is_registered() {
-        //TODO struggling here
-//        AuthenticationAPI authenticationAPI = new AuthenticationAPI();
-//        testUser = authenticationAPI.createRandomUser();
+        AuthenticationAPI authenticationAPI = new AuthenticationAPI();
+        testUser = authenticationAPI.createRandomUser();
     }
 
     @Given("a user navigates to the sign in page")
